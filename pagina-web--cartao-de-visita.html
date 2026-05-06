@@ -1,0 +1,118 @@
+<!-- O "Esqueleto" (HTML) -->
+
+<body>
+  <div>
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQF5_ozlHH5vLA/profile-displayphoto-shrink_800_800/B4DZ3zCdc2I4Ag-/0/1777899002133?e=1779321600&v=beta&t=dWw4GUE-b1sFpPxO45q_bZdEzykDpjR_hOzOm-eLpIo" width="150px" height="150px" />
+    <h1>Gabriel Schug</h1>
+    <h2>Estudante de Programação</h2>
+  </div>
+
+  <div class="caixa-resumo">
+    <p>Bem-vindo(a), eu sou o <b>Gabriel</b>!
+      <br><br>
+      Estudante do 3º semestre do curso de <b>Análise e Desenvolvimento de Sistemas</b> na <b>UniSenac Pelotas</b>.
+    </p>
+  </div>
+
+  <div>
+    <!-- Tag Ancora: href="link da web" + target="abrir em nova aba" + class="nomear botoes" -->
+    <a href="https://www.youtube.com/watch?v=nPvuNsRccVw&list=RDnPvuNsRccVw&start_radio=1" target="_blank" class="botao-link">
+      🎵 Minha música favorita
+    </a>
+
+    <a href="https://www.adorocinema.com/series/serie-458/" target="_blank" class="botao-link">
+      📺 Tens que assistir essa série!
+    </a>
+
+    <a href="https://github.com/gabrielschug" target="_blank" class="botao-link">
+      💻 Meus Projetos estão no Github
+    </a>
+
+    <a href="https://www.senacrs.com.br/cursograduacao/curso-superior-de-tecnologia-em-analise-e-desenvolvimento-de-sistemas/ecd86dcc-9012-4c85-9f07-0b91647e4b7b/8d0ded17-fd8e-4d8d-8b1c-cacbf8c65a36" target="_blank" class="botao-link">
+      👨🏽‍💻 Esse curso é top!
+    </a>
+
+  </div>
+
+  <div class="rodape">
+    <p>Website criado em 2026</p>
+  </div>
+
+</body>
+
+<!-- A "Estilização" (CSS) -->
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    /* Munda a fonte para uma mais moderna*/
+    /* COMBO PARA CENTRALIZAR TUDO */
+    display: flex;
+    /* Transforma a página em um ambiente flexivel */
+    flex-direction: column;
+    /* Coloca um elemntos embaixo do outro */
+    align-items: center;
+    /* Centraliza tudo no meio da tela horizontal */
+    text-align: center;
+    /* Centraliza os textos dentro das suas proprias caixas*/
+    background-color: #342e37;
+    /* Cor de fundo da página */
+    color: white;
+    /* Cor de todos textos da página */
+  }
+
+  img {
+    object-fit: cover;
+    /* Evita que a foto fique esmagada ou esticada. Ajuste para cobrir toda a area */
+    border-radius: 100%;
+    /* Arrendondar os cantos 100% vira circulo */
+    margin-top: 40px;
+    /* Afastar do topo da tela */
+  }
+
+  /* Chamando uma "etiqueta", utilizamos o "." antes do nome  */
+  .caixa-resumo {
+    border: 2px solid gray;
+    /* Cria uma borda ao redor da caixa-sobre */
+    padding: 10px;
+    /* Cria espaçamento interno pro elemento */
+    margin: 15px;
+    /* Afasta dos elementos vizinhos */
+    border-radius: 10px;
+    /* Arrendondar os cantos */
+    max-width: 400px;
+    /* Define um tamanho máximo de largura */
+  }
+
+  .botao-link {
+    display: block;
+    /* Força o link a ocupar o bloco inteiro, toda linha */
+    background-color: #3c91e6;
+    /* Cor de fundo da página */
+    color: white;
+    /* Cor da letra do botão */
+    text-decoration: none;
+    /* Tira o sublinhado padrão dos links de internet | nome = nada */
+    padding: 15px;
+    /* Cria espaçamento interno pro elemento*/
+    margin: 10px;
+    /* Afastar dos elementos vizinhos */
+    border-radius: 8px;
+    /* Arrendondar os cantos */
+    font-weight: bold;
+    /* Deixa a letra do botão mais grossa (destaque) */
+    width: 300px;
+  }
+
+  /* Mudar a cor do botão quando passar o mouse em cima. Utilizamos o estado :hover */
+  .botao-link:hover {
+    background-color: #155ca2;
+    /* Escurece o azul | sensação de interação - Desktop */
+  }
+
+  .rodape {
+    margin-top: 80px;
+    /* Joga o rodapé bem lá para baixo da tela */
+    font-size: 12px;
+    /* Deixa a letra pequena */
+  }
+</style>
